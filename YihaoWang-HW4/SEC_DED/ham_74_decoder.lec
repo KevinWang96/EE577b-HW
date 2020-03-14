@@ -1,0 +1,47 @@
+SETUP> read design /home/viterbi/00/yihao/ee577b/hw4/ham_74/src/ham_74_decoder.v -Verilog -Golden   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Command: read design /home/viterbi/00/yihao/ee577b/hw4/ham_74/src/ham_74_decoder.v -Verilog -Golden   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Parsing file /home/viterbi/00/yihao/ee577b/hw4/ham_74/src/ham_74_decoder.v ...
+// Golden root module is set to 'ham_74_decoder'
+// Note: Read VERILOG design successfully
+SETUP> read library -Revised -Replace  -sensitive    -Verilog /home/viterbi/00/yihao/ee577b/hw4/ham_74/include/gscl45nm.v -nooptimize   
+// Command: read library -Revised -Replace  -sensitive    -Verilog /home/viterbi/00/yihao/ee577b/hw4/ham_74/include/gscl45nm.v -nooptimize   
+// Parsing file /home/viterbi/00/yihao/ee577b/hw4/ham_74/include/gscl45nm.v ...
+// Warning: (RTL14) Signal has input but it has no output (occurrence:6)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:1)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:32)
+// Warning: (DIR6.2) Supported compiler directive is detected (occurrence:64)
+// Note: Read VERILOG library successfully
+SETUP> read design /home/viterbi/00/yihao/ee577b/hw4/ham_74/netlist/ham_74_decoder.syn.v -Verilog -Revised   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Command: read design /home/viterbi/00/yihao/ee577b/hw4/ham_74/netlist/ham_74_decoder.syn.v -Verilog -Revised   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Parsing file /home/viterbi/00/yihao/ee577b/hw4/ham_74/netlist/ham_74_decoder.syn.v ...
+// Revised root module is set to 'ham_74_decoder'
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:4)
+// Note: Read VERILOG design successfully
+SETUP> set system mode lec
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO        Total   
+--------------------------------------------------------------------------------
+Golden            8      13        21      
+--------------------------------------------------------------------------------
+Revised           8      13        21      
+================================================================================
+LEC> add compared points -all
+// Command: add compared points -all
+// 13 compared points added to compare list
+LEC> compare -NONEQ_Print
+// Command: compare -NONEQ_Print
+================================================================================
+Compared points      PO        Total   
+--------------------------------------------------------------------------------
+Equivalent           13        13      
+================================================================================
+
+

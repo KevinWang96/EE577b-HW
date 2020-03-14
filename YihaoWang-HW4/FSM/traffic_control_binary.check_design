@@ -1,0 +1,21 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Sat Feb 29 17:57:53 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               7
+    Cells do not drive (LINT-1)                                     7
+--------------------------------------------------------------------------------
+
+Warning: In design 'traffic_control_binary', cell 'C568' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_binary', cell 'C574' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_binary', cell 'C578' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_binary', cell 'C583' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_binary', cell 'C587' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_binary', cell 'C591' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_binary', cell 'C595' does not drive any nets. (LINT-1)
+1

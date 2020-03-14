@@ -1,0 +1,417 @@
+SETUP> read design /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/design/TM_ALU.v -Verilog -Golden   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Command: read design /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/design/TM_ALU.v -Verilog -Golden   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Parsing file /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/design/TM_ALU.v ...
+// Golden root module is set to 'TM_ALU'
+// Warning: (RTL1.5a) Assignment with RHS bit width is greater than LHS bit width (occurrence:1)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:3)
+// Warning: (RTL6.3) X created when divisor equals to zero (occurrence:1)
+// Note: Read VERILOG design successfully
+SETUP> read library -Revised -Replace  -sensitive    -Verilog /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/include/gscl45nm.v -nooptimize   
+// Command: read library -Revised -Replace  -sensitive    -Verilog /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/include/gscl45nm.v -nooptimize   
+// Parsing file /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/include/gscl45nm.v ...
+// Warning: (RTL14) Signal has input but it has no output (occurrence:6)
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:1)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:32)
+// Warning: (DIR6.2) Supported compiler directive is detected (occurrence:64)
+// Note: Read VERILOG library successfully
+SETUP> read design /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/netlist/TM_ALU.syn.v -Verilog -Revised   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Command: read design /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/netlist/TM_ALU.syn.v -Verilog -Revised   -sensitive         -continuousassignment Bidirectional   -nokeep_unreach   -nosupply 
+// Parsing file /home/viterbi/00/yihao/ee577b/hw4/TM_ALU/netlist/TM_ALU.syn.v ...
+// Revised root module is set to 'TM_ALU'
+// Warning: (RTL2.13) Undriven pin is detected (occurrence:60)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:58)
+// Note: (HRC3.5b) Open output port connection is detected (occurrence:15)
+// Warning: (HRC3.10a) An input port is declared, but it is not completely used in the module (occurrence:17)
+// Warning: There are 60 undriven nets in Revised
+// Warning: There are 60 undriven pins in Revised
+// Note: Read VERILOG design successfully
+SETUP> set system mode lec
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Warning: (F34) Converted 16 X assignment(s) as don't care(s)
+// Processing Revised ...
+// Modeling Revised ...
+// (F28) Converted 60 internal output port(s) to inout port(s)
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            26     16     104       146     
+--------------------------------------------------------------------------------
+Revised           26     16     104       146     
+================================================================================
+LEC> add compared points -all
+// Command: add compared points -all
+// 120 compared points added to compare list
+LEC> compare -NONEQ_Print
+// Command: compare -NONEQ_Print
+Non-equivalent points:
+  (G) + 43   DFF  /stage_3_reg[15]
+  (R) + 139  DFF  /stage_3_reg_15_/U$1/U$1
+Non-equivalent points:
+  (G) + 27   PO   /AvgTxLen_new[7]
+  (R) + 27   PO   /AvgTxLen_new[7]
+Non-equivalent points:
+  (G) + 44   DFF  /stage_3_reg[14]
+  (R) + 140  DFF  /stage_3_reg_14_/U$1/U$1
+Non-equivalent points:
+  (G) + 28   PO   /AvgTxLen_new[6]
+  (R) + 28   PO   /AvgTxLen_new[6]
+Non-equivalent points:
+  (G) + 29   PO   /AvgTxLen_new[5]
+  (R) + 29   PO   /AvgTxLen_new[5]
+Non-equivalent points:
+  (G) + 45   DFF  /stage_3_reg[13]
+  (R) + 141  DFF  /stage_3_reg_13_/U$1/U$1
+Non-equivalent points:
+  (G) + 46   DFF  /stage_3_reg[12]
+  (R) + 142  DFF  /stage_3_reg_12_/U$1/U$1
+Non-equivalent points:
+  (G) + 30   PO   /AvgTxLen_new[4]
+  (R) + 30   PO   /AvgTxLen_new[4]
+Non-equivalent points:
+  (G) + 31   PO   /AvgTxLen_new[3]
+  (R) + 31   PO   /AvgTxLen_new[3]
+Non-equivalent points:
+  (G) + 47   DFF  /stage_3_reg[11]
+  (R) + 143  DFF  /stage_3_reg_11_/U$1/U$1
+Non-equivalent points:
+  (G) + 32   PO   /AvgTxLen_new[2]
+  (R) + 32   PO   /AvgTxLen_new[2]
+Non-equivalent points:
+  (G) + 48   DFF  /stage_3_reg[10]
+  (R) + 144  DFF  /stage_3_reg_10_/U$1/U$1
+Non-equivalent points:
+  (G) + 49   DFF  /stage_3_reg[9]
+  (R) + 145  DFF  /stage_3_reg_9_/U$1/U$1
+Non-equivalent points:
+  (G) + 33   PO   /AvgTxLen_new[1]
+  (R) + 33   PO   /AvgTxLen_new[1]
+Non-equivalent points:
+  (G) + 34   PO   /AvgTxLen_new[0]
+  (R) + 34   PO   /AvgTxLen_new[0]
+Non-equivalent points:
+  (G) + 50   DFF  /stage_3_reg[8]
+  (R) + 146  DFF  /stage_3_reg_8_/U$1/U$1
+Non-equivalent points:
+  (G) + 35   PO   /InstExed_new[7]
+  (R) + 35   PO   /InstExed_new[7]
+Non-equivalent points:
+  (G) + 51   DFF  /stage_3_reg[7]
+  (R) + 67   DFF  /stage_3_reg_7_/U$1/U$1
+Non-equivalent points:
+  (G) + 52   DFF  /stage_3_reg[6]
+  (R) + 68   DFF  /stage_3_reg_6_/U$1/U$1
+Non-equivalent points:
+  (G) + 36   PO   /InstExed_new[6]
+  (R) + 36   PO   /InstExed_new[6]
+Non-equivalent points:
+  (G) + 53   DFF  /stage_3_reg[5]
+  (R) + 69   DFF  /stage_3_reg_5_/U$1/U$1
+Non-equivalent points:
+  (G) + 37   PO   /InstExed_new[5]
+  (R) + 37   PO   /InstExed_new[5]
+Non-equivalent points:
+  (G) + 54   DFF  /stage_3_reg[4]
+  (R) + 70   DFF  /stage_3_reg_4_/U$1/U$1
+Non-equivalent points:
+  (G) + 38   PO   /InstExed_new[4]
+  (R) + 38   PO   /InstExed_new[4]
+Non-equivalent points:
+  (G) + 39   PO   /InstExed_new[3]
+  (R) + 39   PO   /InstExed_new[3]
+Non-equivalent points:
+  (G) + 55   DFF  /stage_3_reg[3]
+  (R) + 71   DFF  /stage_3_reg_3_/U$1/U$1
+Non-equivalent points:
+  (G) + 56   DFF  /stage_3_reg[2]
+  (R) + 72   DFF  /stage_3_reg_2_/U$1/U$1
+Non-equivalent points:
+  (G) + 40   PO   /InstExed_new[2]
+  (R) + 40   PO   /InstExed_new[2]
+Non-equivalent points:
+  (G) + 57   DFF  /stage_3_reg[1]
+  (R) + 73   DFF  /stage_3_reg_1_/U$1/U$1
+Non-equivalent points:
+  (G) + 41   PO   /InstExed_new[1]
+  (R) + 41   PO   /InstExed_new[1]
+Non-equivalent points:
+  (G) + 58   DFF  /stage_3_reg[0]
+  (R) + 74   DFF  /stage_3_reg_0_/U$1/U$1
+Non-equivalent points:
+  (G) + 42   PO   /InstExed_new[0]
+  (R) + 42   PO   /InstExed_new[0]
+Non-equivalent points:
+  (G) + 60   DFF  /stage_2_reg[30]
+  (R) + 132  DFF  /stage_2_reg_30_/U$1/U$1
+Non-equivalent points:
+  (G) + 61   DFF  /stage_2_reg[29]
+  (R) + 131  DFF  /stage_2_reg_29_/U$1/U$1
+Non-equivalent points:
+  (G) + 62   DFF  /stage_2_reg[28]
+  (R) + 129  DFF  /stage_2_reg_28_/U$1/U$1
+Non-equivalent points:
+  (G) + 63   DFF  /stage_2_reg[27]
+  (R) + 128  DFF  /stage_2_reg_27_/U$1/U$1
+Non-equivalent points:
+  (G) + 64   DFF  /stage_2_reg[26]
+  (R) + 126  DFF  /stage_2_reg_26_/U$1/U$1
+Non-equivalent points:
+  (G) + 65   DFF  /stage_2_reg[25]
+  (R) + 125  DFF  /stage_2_reg_25_/U$1/U$1
+Non-equivalent points:
+  (G) + 66   DFF  /stage_2_reg[24]
+  (R) + 123  DFF  /stage_2_reg_24_/U$1/U$1
+Non-equivalent points:
+  (G) + 67   DFF  /stage_2_reg[23]
+  (R) + 122  DFF  /stage_2_reg_23_/U$1/U$1
+Non-equivalent points:
+  (G) + 68   DFF  /stage_2_reg[22]
+  (R) + 120  DFF  /stage_2_reg_22_/U$1/U$1
+Non-equivalent points:
+  (G) + 69   DFF  /stage_2_reg[21]
+  (R) + 117  DFF  /stage_2_reg_21_/U$1/U$1
+Non-equivalent points:
+  (G) + 70   DFF  /stage_2_reg[20]
+  (R) + 115  DFF  /stage_2_reg_20_/U$1/U$1
+Non-equivalent points:
+  (G) + 71   DFF  /stage_2_reg[19]
+  (R) + 109  DFF  /stage_2_reg_19_/U$1/U$1
+Non-equivalent points:
+  (G) + 72   DFF  /stage_2_reg[18]
+  (R) + 105  DFF  /stage_2_reg_18_/U$1/U$1
+Non-equivalent points:
+  (G) + 73   DFF  /stage_2_reg[17]
+  (R) + 99   DFF  /stage_2_reg_17_/U$1/U$1
+Non-equivalent points:
+  (G) + 74   DFF  /stage_2_reg[16]
+  (R) + 87   DFF  /stage_2_reg_16_/U$1/U$1
+Non-equivalent points:
+  (G) + 75   DFF  /stage_2_reg[15]
+  (R) + 113  DFF  /stage_2_reg_15_/U$1/U$1
+Non-equivalent points:
+  (G) + 76   DFF  /stage_2_reg[14]
+  (R) + 110  DFF  /stage_2_reg_14_/U$1/U$1
+Non-equivalent points:
+  (G) + 77   DFF  /stage_2_reg[13]
+  (R) + 107  DFF  /stage_2_reg_13_/U$1/U$1
+Non-equivalent points:
+  (G) + 78   DFF  /stage_2_reg[12]
+  (R) + 103  DFF  /stage_2_reg_12_/U$1/U$1
+Non-equivalent points:
+  (G) + 79   DFF  /stage_2_reg[11]
+  (R) + 101  DFF  /stage_2_reg_11_/U$1/U$1
+Non-equivalent points:
+  (G) + 80   DFF  /stage_2_reg[10]
+  (R) + 97   DFF  /stage_2_reg_10_/U$1/U$1
+Non-equivalent points:
+  (G) + 81   DFF  /stage_2_reg[9]
+  (R) + 85   DFF  /stage_2_reg_9_/U$1/U$1
+Non-equivalent points:
+  (G) + 82   DFF  /stage_2_reg[8]
+  (R) + 83   DFF  /stage_2_reg_8_/U$1/U$1
+Non-equivalent points:
+  (G) + 83   DFF  /stage_2_reg[7]
+  (R) + 114  DFF  /stage_2_reg_7_/U$1/U$1
+Non-equivalent points:
+  (G) + 84   DFF  /stage_2_reg[6]
+  (R) + 111  DFF  /stage_2_reg_6_/U$1/U$1
+Non-equivalent points:
+  (G) + 85   DFF  /stage_2_reg[5]
+  (R) + 108  DFF  /stage_2_reg_5_/U$1/U$1
+Non-equivalent points:
+  (G) + 86   DFF  /stage_2_reg[4]
+  (R) + 104  DFF  /stage_2_reg_4_/U$1/U$1
+Non-equivalent points:
+  (G) + 87   DFF  /stage_2_reg[3]
+  (R) + 102  DFF  /stage_2_reg_3_/U$1/U$1
+Non-equivalent points:
+  (G) + 88   DFF  /stage_2_reg[2]
+  (R) + 98   DFF  /stage_2_reg_2_/U$1/U$1
+Non-equivalent points:
+  (G) + 89   DFF  /stage_2_reg[1]
+  (R) + 86   DFF  /stage_2_reg_1_/U$1/U$1
+Non-equivalent points:
+  (G) + 90   DFF  /stage_2_reg[0]
+  (R) + 84   DFF  /stage_2_reg_0_/U$1/U$1
+Non-equivalent points:
+  (G) + 91   DFF  /stage_1_reg[31]
+  (R) + 137  DFF  /stage_1_reg_31_/U$1/U$1
+Non-equivalent points:
+  (G) + 92   DFF  /stage_1_reg[30]
+  (R) + 138  DFF  /stage_1_reg_30_/U$1/U$1
+Non-equivalent points:
+  (G) + 93   DFF  /stage_1_reg[29]
+  (R) + 136  DFF  /stage_1_reg_29_/U$1/U$1
+Non-equivalent points:
+  (G) + 94   DFF  /stage_1_reg[28]
+  (R) + 135  DFF  /stage_1_reg_28_/U$1/U$1
+Non-equivalent points:
+  (G) + 95   DFF  /stage_1_reg[27]
+  (R) + 133  DFF  /stage_1_reg_27_/U$1/U$1
+Non-equivalent points:
+  (G) + 96   DFF  /stage_1_reg[26]
+  (R) + 130  DFF  /stage_1_reg_26_/U$1/U$1
+Non-equivalent points:
+  (G) + 97   DFF  /stage_1_reg[25]
+  (R) + 127  DFF  /stage_1_reg_25_/U$1/U$1
+Non-equivalent points:
+  (G) + 98   DFF  /stage_1_reg[24]
+  (R) + 124  DFF  /stage_1_reg_24_/U$1/U$1
+Non-equivalent points:
+  (G) + 99   DFF  /stage_1_reg[23]
+  (R) + 121  DFF  /stage_1_reg_23_/U$1/U$1
+Non-equivalent points:
+  (G) + 100  DFF  /stage_1_reg[22]
+  (R) + 119  DFF  /stage_1_reg_22_/U$1/U$1
+Non-equivalent points:
+  (G) + 101  DFF  /stage_1_reg[21]
+  (R) + 118  DFF  /stage_1_reg_21_/U$1/U$1
+Non-equivalent points:
+  (G) + 102  DFF  /stage_1_reg[20]
+  (R) + 116  DFF  /stage_1_reg_20_/U$1/U$1
+Non-equivalent points:
+  (G) + 103  DFF  /stage_1_reg[19]
+  (R) + 112  DFF  /stage_1_reg_19_/U$1/U$1
+Non-equivalent points:
+  (G) + 104  DFF  /stage_1_reg[18]
+  (R) + 106  DFF  /stage_1_reg_18_/U$1/U$1
+Non-equivalent points:
+  (G) + 105  DFF  /stage_1_reg[17]
+  (R) + 100  DFF  /stage_1_reg_17_/U$1/U$1
+Non-equivalent points:
+  (G) + 106  DFF  /stage_1_reg[16]
+  (R) + 96   DFF  /stage_1_reg_16_/U$1/U$1
+Non-equivalent points:
+  (G) + 107  DFF  /stage_1_reg[15]
+  (R) + 75   DFF  /stage_1_reg_15_/U$1/U$1
+Non-equivalent points:
+  (G) + 108  DFF  /stage_1_reg[14]
+  (R) + 76   DFF  /stage_1_reg_14_/U$1/U$1
+Non-equivalent points:
+  (G) + 109  DFF  /stage_1_reg[13]
+  (R) + 77   DFF  /stage_1_reg_13_/U$1/U$1
+Non-equivalent points:
+  (G) + 110  DFF  /stage_1_reg[12]
+  (R) + 78   DFF  /stage_1_reg_12_/U$1/U$1
+Non-equivalent points:
+  (G) + 111  DFF  /stage_1_reg[11]
+  (R) + 79   DFF  /stage_1_reg_11_/U$1/U$1
+Non-equivalent points:
+  (G) + 112  DFF  /stage_1_reg[10]
+  (R) + 80   DFF  /stage_1_reg_10_/U$1/U$1
+Non-equivalent points:
+  (G) + 113  DFF  /stage_1_reg[9]
+  (R) + 81   DFF  /stage_1_reg_9_/U$1/U$1
+Non-equivalent points:
+  (G) + 114  DFF  /stage_1_reg[8]
+  (R) + 82   DFF  /stage_1_reg_8_/U$1/U$1
+Non-equivalent points:
+  (G) + 115  DFF  /stage_1_reg[7]
+  (R) + 88   DFF  /stage_1_reg_7_/U$1/U$1
+Non-equivalent points:
+  (G) + 116  DFF  /stage_1_reg[6]
+  (R) + 89   DFF  /stage_1_reg_6_/U$1/U$1
+Non-equivalent points:
+  (G) + 117  DFF  /stage_1_reg[5]
+  (R) + 90   DFF  /stage_1_reg_5_/U$1/U$1
+Non-equivalent points:
+  (G) + 118  DFF  /stage_1_reg[4]
+  (R) + 91   DFF  /stage_1_reg_4_/U$1/U$1
+Non-equivalent points:
+  (G) + 119  DFF  /stage_1_reg[3]
+  (R) + 92   DFF  /stage_1_reg_3_/U$1/U$1
+Non-equivalent points:
+  (G) + 120  DFF  /stage_1_reg[2]
+  (R) + 93   DFF  /stage_1_reg_2_/U$1/U$1
+Non-equivalent points:
+  (G) + 121  DFF  /stage_1_reg[1]
+  (R) + 94   DFF  /stage_1_reg_1_/U$1/U$1
+Non-equivalent points:
+  (G) + 122  DFF  /stage_1_reg[0]
+  (R) + 95   DFF  /stage_1_reg_0_/U$1/U$1
+Non-equivalent points:
+  (G) + 123  DFF  /stage_0_reg[23]
+  (R) + 43   DFF  /stage_0_reg_23_/U$1/U$1
+Non-equivalent points:
+  (G) + 124  DFF  /stage_0_reg[22]
+  (R) + 44   DFF  /stage_0_reg_22_/U$1/U$1
+Non-equivalent points:
+  (G) + 125  DFF  /stage_0_reg[21]
+  (R) + 45   DFF  /stage_0_reg_21_/U$1/U$1
+Non-equivalent points:
+  (G) + 126  DFF  /stage_0_reg[20]
+  (R) + 46   DFF  /stage_0_reg_20_/U$1/U$1
+Non-equivalent points:
+  (G) + 127  DFF  /stage_0_reg[19]
+  (R) + 47   DFF  /stage_0_reg_19_/U$1/U$1
+Non-equivalent points:
+  (G) + 128  DFF  /stage_0_reg[18]
+  (R) + 48   DFF  /stage_0_reg_18_/U$1/U$1
+Non-equivalent points:
+  (G) + 129  DFF  /stage_0_reg[17]
+  (R) + 49   DFF  /stage_0_reg_17_/U$1/U$1
+Non-equivalent points:
+  (G) + 130  DFF  /stage_0_reg[16]
+  (R) + 50   DFF  /stage_0_reg_16_/U$1/U$1
+Non-equivalent points:
+  (G) + 131  DFF  /stage_0_reg[15]
+  (R) + 51   DFF  /stage_0_reg_15_/U$1/U$1
+Non-equivalent points:
+  (G) + 132  DFF  /stage_0_reg[14]
+  (R) + 52   DFF  /stage_0_reg_14_/U$1/U$1
+Non-equivalent points:
+  (G) + 133  DFF  /stage_0_reg[13]
+  (R) + 53   DFF  /stage_0_reg_13_/U$1/U$1
+Non-equivalent points:
+  (G) + 134  DFF  /stage_0_reg[12]
+  (R) + 54   DFF  /stage_0_reg_12_/U$1/U$1
+Non-equivalent points:
+  (G) + 135  DFF  /stage_0_reg[11]
+  (R) + 55   DFF  /stage_0_reg_11_/U$1/U$1
+Non-equivalent points:
+  (G) + 136  DFF  /stage_0_reg[10]
+  (R) + 56   DFF  /stage_0_reg_10_/U$1/U$1
+Non-equivalent points:
+  (G) + 137  DFF  /stage_0_reg[9]
+  (R) + 57   DFF  /stage_0_reg_9_/U$1/U$1
+Non-equivalent points:
+  (G) + 138  DFF  /stage_0_reg[8]
+  (R) + 58   DFF  /stage_0_reg_8_/U$1/U$1
+Non-equivalent points:
+  (G) + 139  DFF  /stage_0_reg[7]
+  (R) + 59   DFF  /stage_0_reg_7_/U$1/U$1
+Non-equivalent points:
+  (G) + 140  DFF  /stage_0_reg[6]
+  (R) + 60   DFF  /stage_0_reg_6_/U$1/U$1
+Non-equivalent points:
+  (G) + 141  DFF  /stage_0_reg[5]
+  (R) + 61   DFF  /stage_0_reg_5_/U$1/U$1
+Non-equivalent points:
+  (G) + 142  DFF  /stage_0_reg[4]
+  (R) + 62   DFF  /stage_0_reg_4_/U$1/U$1
+Non-equivalent points:
+  (G) + 143  DFF  /stage_0_reg[3]
+  (R) + 63   DFF  /stage_0_reg_3_/U$1/U$1
+Non-equivalent points:
+  (G) + 144  DFF  /stage_0_reg[2]
+  (R) + 64   DFF  /stage_0_reg_2_/U$1/U$1
+Non-equivalent points:
+  (G) + 145  DFF  /stage_0_reg[1]
+  (R) + 65   DFF  /stage_0_reg_1_/U$1/U$1
+Non-equivalent points:
+  (G) + 146  DFF  /stage_0_reg[0]
+  (R) + 66   DFF  /stage_0_reg_0_/U$1/U$1
+Non-equivalent points:
+  (G) + 59   DFF  /stage_2_reg[31]
+  (R) + 134  DFF  /stage_2_reg_31_/U$1/U$1
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Non-equivalent       16     104       120     
+================================================================================
+
+

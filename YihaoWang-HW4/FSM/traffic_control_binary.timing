@@ -1,0 +1,50 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : traffic_control_binary
+Version: K-2015.06-SP5-5
+Date   : Sat Feb 29 17:57:55 2020
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: state_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: RA (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  state_reg[2]/CLK (DFFPOSX1)              0.00       0.00 r
+  state_reg[2]/Q (DFFPOSX1)                0.12       0.12 f
+  U186/Y (INVX1)                           0.04       0.16 r
+  U86/Y (NAND3X1)                          0.02       0.17 f
+  U159/Y (BUFX2)                           0.04       0.21 f
+  U102/Y (AND2X1)                          0.04       0.25 f
+  U85/Y (NAND3X1)                          0.03       0.28 r
+  U139/Y (BUFX2)                           0.03       0.32 r
+  U178/Y (INVX1)                           0.01       0.33 f
+  U140/Y (AND2X1)                          0.05       0.38 f
+  U82/Y (NAND3X1)                          0.03       0.41 r
+  U142/Y (BUFX2)                           0.04       0.45 r
+  U99/Y (AND2X1)                           0.04       0.49 r
+  RA (out)                                 0.00       0.49 r
+  data arrival time                                   0.49
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -0.49
+  -----------------------------------------------------------
+  slack (MET)                                         4.51
+
+
+1

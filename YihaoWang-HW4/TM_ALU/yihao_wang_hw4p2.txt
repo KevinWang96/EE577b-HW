@@ -1,0 +1,2 @@
+FREQ: 200 MHz
+POWER: 0.9405 mW

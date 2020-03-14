@@ -1,0 +1,21 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Sat Feb 29 18:38:55 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               7
+    Cells do not drive (LINT-1)                                     7
+--------------------------------------------------------------------------------
+
+Warning: In design 'traffic_control_1hot', cell 'C774' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_1hot', cell 'C780' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_1hot', cell 'C784' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_1hot', cell 'C789' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_1hot', cell 'C793' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_1hot', cell 'C797' does not drive any nets. (LINT-1)
+Warning: In design 'traffic_control_1hot', cell 'C801' does not drive any nets. (LINT-1)
+1

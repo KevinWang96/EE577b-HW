@@ -1,0 +1,9 @@
+1. (a) 1'b0 (b) 1'b1 (c) 1'b1 (d) 1'b0 (e) 1'b1 (f) 1'b0
+2. (a) 1'b0 (b) 1'bx
+3. (a) 1'bx (b) 4'bxxxx (c) 1'bx (d) 12'b1010_1010_1x10 (e) 1'b1 (f) 1'b1
+4. (a) ilegal
+   (b) legal; 8'b01111100
+   (c) legal; 12'b1010_1011_1100
+   (d) legal; 4'b1011
+   (e) legal; 4'b11zz
+   (f) legal; 8'b11001001

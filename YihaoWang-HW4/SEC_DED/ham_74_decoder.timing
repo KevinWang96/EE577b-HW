@@ -1,0 +1,49 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ham_74_decoder
+Version: K-2015.06-SP5-5
+Date   : Sat Feb 29 15:18:08 2020
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: c[6] (input port)
+  Endpoint: x (output port)
+  Path Group: default
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  c[6] (in)                                0.00       0.00 r
+  U26/Y (XOR2X1)                           0.11       0.11 r
+  U25/YS (FAX1)                            0.10       0.21 r
+  U48/Y (INVX1)                            0.03       0.23 f
+  U39/Y (OR2X1)                            0.05       0.28 f
+  U40/Y (INVX1)                            0.01       0.29 r
+  U29/Y (AND2X1)                           0.03       0.32 r
+  U30/Y (INVX1)                            0.02       0.34 f
+  U16/Y (XNOR2X1)                          0.06       0.40 r
+  U15/YS (FAX1)                            0.09       0.49 f
+  U14/Y (XNOR2X1)                          0.04       0.52 r
+  U13/Y (AOI21X1)                          0.02       0.54 f
+  x (out)                                  0.00       0.54 f
+  data arrival time                                   0.54
+
+  max_delay                                5.00       5.00
+  output external delay                    0.00       5.00
+  data required time                                  5.00
+  -----------------------------------------------------------
+  data required time                                  5.00
+  data arrival time                                  -0.54
+  -----------------------------------------------------------
+  slack (MET)                                         4.46
+
+
+1

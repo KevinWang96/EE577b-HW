@@ -1,0 +1,18 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Sat Feb 29 15:18:07 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Feedthrough (LINT-29)                                           4
+--------------------------------------------------------------------------------
+
+Warning: In design 'ham_74_encoder', input port 'd[3]' is connected directly to output port 'c[6]'. (LINT-29)
+Warning: In design 'ham_74_encoder', input port 'd[2]' is connected directly to output port 'c[5]'. (LINT-29)
+Warning: In design 'ham_74_encoder', input port 'd[1]' is connected directly to output port 'c[4]'. (LINT-29)
+Warning: In design 'ham_74_encoder', input port 'd[0]' is connected directly to output port 'c[2]'. (LINT-29)
+1

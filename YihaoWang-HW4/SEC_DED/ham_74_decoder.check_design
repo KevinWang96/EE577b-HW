@@ -1,0 +1,18 @@
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06-SP5-5
+Date:        Sat Feb 29 15:18:07 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      4
+    Shorted outputs (LINT-31)                                       4
+--------------------------------------------------------------------------------
+
+Warning: In design 'ham_74_decoder', output port 'qc[6]' is connected directly to output port 'qd[3]'. (LINT-31)
+Warning: In design 'ham_74_decoder', output port 'qc[5]' is connected directly to output port 'qd[2]'. (LINT-31)
+Warning: In design 'ham_74_decoder', output port 'qc[4]' is connected directly to output port 'qd[1]'. (LINT-31)
+Warning: In design 'ham_74_decoder', output port 'qc[2]' is connected directly to output port 'qd[0]'. (LINT-31)
+1
