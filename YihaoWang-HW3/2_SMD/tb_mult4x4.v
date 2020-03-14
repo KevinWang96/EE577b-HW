@@ -1,3 +1,11 @@
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-14 15:28:14
+ * @LastEditTime: 2020-03-14 01:34:04
+ * @LastEditors: Please set LastEditors
+ * @Description: Testbench for 4-bit Booth Wooley 2's complement multiplier
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/2_SMD/tb_mult4x4.v
+ */
 `timescale 1ns/100ps
 `define TRUE 1'b1
 `define FALSE 1'b0

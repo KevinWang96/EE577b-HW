@@ -1,6 +1,11 @@
-/* 
-    Design of coin return cotrol logic using finite state machine
-*/
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-11 16:14:21
+ * @LastEditTime: 2020-03-14 01:28:39
+ * @LastEditors: Please set LastEditors
+ * @Description: Coin return state machine for vending machine
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/1_FSM/vm.v
+ */
 module coin_return (disp_B, disp_Q, disp_D, disp_N, disp_P, done, 
     money, price, start, clk, reset, avail_B, avail_Q, avail_D, avail_N, avail_P);
 

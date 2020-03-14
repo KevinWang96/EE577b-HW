@@ -1,3 +1,11 @@
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-14 01:14:40
+ * @LastEditTime: 2020-03-14 01:33:26
+ * @LastEditors: Please set LastEditors
+ * @Description: Testbench for 1-bit half adder
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/2_SMD/tb_ha.v
+ */
 `timescale 1ns/100ps
 module tb_ha;
     // input <=> {a, b}

@@ -1,4 +1,12 @@
 `timescale 1ns/100ps
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-14 00:53:05
+ * @LastEditTime: 2020-03-14 01:32:57
+ * @LastEditors: Please set LastEditors
+ * @Description: Testbench for 1-bit full adder
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/2_SMD/tb_fa.v
+ */
 module tb_fa;
     // input <=> {a, b, ci}
     reg [2:0] inputs;

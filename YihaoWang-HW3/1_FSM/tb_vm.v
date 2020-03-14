@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-02-18 15:44:20
+ * @LastEditTime: 2020-03-14 01:29:09
+ * @LastEditors: Please set LastEditors
+ * @Description: Testbench for coin return state machine
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/1_FSM/tb_vm.v
+ */
 `timescale 1ns/1ps
 `define TRUE 1'b1
 `define FALSE 1'b0

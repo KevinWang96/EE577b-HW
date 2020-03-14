@@ -1,3 +1,11 @@
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-15 15:24:52
+ * @LastEditTime: 2020-03-14 01:34:40
+ * @LastEditors: Please set LastEditors
+ * @Description: Testbench for floating point multiplier
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/3_FPM/tb_fpmul.v
+ */
 `timescale 1ns/100ps
 `define NULL 0
 module tb_fpmul;

@@ -1,3 +1,11 @@
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-18 02:20:51
+ * @LastEditTime: 2020-03-14 01:37:51
+ * @LastEditors: Please set LastEditors
+ * @Description: Testbench for traffic light controller
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/4_TLC/tb_traffic.v
+ */
 `timescale 1ns/1ps
 module tb_traffic;
     reg CLK, reset, ERR, PA, PB;

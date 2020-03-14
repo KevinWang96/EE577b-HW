@@ -1,6 +1,11 @@
-/* 
-    4-bit 2's compliment multiplier using Baugh-Wooley carry save algorithm
-*/
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-21 03:59:09
+ * @LastEditTime: 2020-03-14 01:30:53
+ * @LastEditors: Please set LastEditors
+ * @Description: 4-bit 2's compliment multiplier using Baugh-Wooley carry save algorithm
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/2_SMD/mult4x4.v
+ */
 module mult4x4(
     input [3:0] InA, InB,
     output [7:0] Product

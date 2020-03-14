@@ -1,6 +1,11 @@
 /*
-    design of traffic light controller using finite state machine
-*/
+ * @Author: Yihao Wang
+ * @Date: 2020-02-12 17:35:22
+ * @LastEditTime: 2020-03-14 01:36:55
+ * @LastEditors: Please set LastEditors
+ * @Description: Traffic light controller
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/4_TLC/traffic.v
+ */
 module traffic_control(CLK, reset, ERR, PA, PB, L_A, L_B, RA, RB);
     output [2:0] L_A, L_B;
     output RA, RB;

@@ -1,6 +1,11 @@
 /*
-    Single precision floating point number multiplier
-*/
+ * @Author: Yihao Wang
+ * @Date: 2020-02-15 14:52:01
+ * @LastEditTime: 2020-03-14 01:31:54
+ * @LastEditors: Please set LastEditors
+ * @Description: Single precision floating point number multiplier
+ * @FilePath: /EE577b_HW/YihaoWang-HW3/3_FPM/fpmul.v
+ */
 module fpmul (oprA, oprB, Result);
     input [31:0] oprA, oprB;
     output [31:0] Result;
