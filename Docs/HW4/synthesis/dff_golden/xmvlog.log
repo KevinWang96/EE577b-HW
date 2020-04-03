@@ -1,0 +1,19 @@
+xmvlog(64): 17.04-s014: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	17.04-s014: Started on Nov 22, 2019 at 11:43:33 PST
+ncvlog
+    -STATUS
+    -MESSAGES
+    -UPDATE
+    -INCDIR ./include
+    -work work
+    ./tb/PISO_tb.v
+
+xmvlog: *W,NCEXDEP: Executable (ncvlog) is deprecated. Use (xmvlog) instead.
+file: ./tb/PISO_tb.v
+	module work.PISO_tb
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xmvlog: Memory Usage - Current physical: 25.1M, Current virtual: 51.0M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.1s, 22.3% cpu)
+TOOL:	xmvlog(64)	17.04-s014: Exiting on Nov 22, 2019 at 11:43:33 PST  (total: 00:00:00)

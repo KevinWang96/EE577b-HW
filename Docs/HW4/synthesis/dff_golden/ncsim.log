@@ -1,0 +1,6 @@
+Simulation complete via $finish(1) at time 14500 PS + 0
+./tb/PISO_tb_syn.v:20 		#2		$finish;
+xcelium> ^C
+xcelium> exit
+xmsim: Memory Usage - Final: 50.6M, Peak: 54.1M, Peak virtual: 222.8M
+xmsim: CPU Usage - 1.5s system + 0.5s user = 1.9s total (132.0s, 1.5% cpu)

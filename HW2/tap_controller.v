@@ -1,3 +1,11 @@
+/*
+ * @Author: Yihao Wang
+ * @Date: 2020-02-10 16:43:52
+ * @LastEditTime: 2020-04-03 00:48:19
+ * @LastEditors: Please set LastEditors
+ * @Description: FSM design: Tap Controller
+ * @FilePath: /EE577b_HW/HW2/tap_controller.v
+ */
 module tap_controller (
     output reg [3:0] STATE,
     input TCK, TRST, TMS
@@ -74,6 +82,3 @@ module tap_controller (
     end
     
 endmodule 
-
-
-
